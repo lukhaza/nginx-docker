@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  reverse:
+    container_name: reverse
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: myreverseproxy     
+    ports:
+      - 80:80
+      - 443:443
